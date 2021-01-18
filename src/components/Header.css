@@ -1,0 +1,71 @@
+.header{
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    position: sticky;                           /*to make header remain at one place*/ 
+    top: 0;
+    z-index: 100;                               /*setting priority of header (100 means no other thing will come over this header)*/
+}
+
+.header_logo{
+    width: 100px;
+    object-fit: contain;                        /*if screen resized the aspect ratio of amazon_logo remains same*/
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 18px;
+}
+
+.header_search{
+    display: flex;
+    flex: 1;                                   /*to use as much space present*/
+}
+
+.header_searchInput{
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+
+.header_searchIcon{
+    background-color: #cd9042;
+    padding: 5px;
+    height: 22px !important;
+}
+
+
+.header_nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header_link{
+    color: white;
+    text-decoration: none;
+}
+
+.header_options{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header_optionLineOne{
+    font-size: 10px;
+}
+
+.header_optionLineTwo{
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.header_optionBasket{
+    display: flex;   
+}
+
+.header_basketCount{
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+}
